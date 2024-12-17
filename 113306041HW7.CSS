@@ -1,0 +1,154 @@
+/* 全局樣式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 主容器 */
+.main-container {
+    display: flex;
+    width: 900px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* 左側面板 */
+.left-panel {
+    width: 330px;
+    background: gray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 880px;
+}
+
+.photo-panel {
+    background: url('ppp.png') no-repeat center center;
+    background-size: cover;
+    height: 50%;
+}
+
+/* 標題區與按鈕 */
+.display-nameeditbotton {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 10px 10px 0;
+}
+
+.button {
+    padding: 5px 15px;
+    font-size: 16px;
+    background: #f5f5f5;
+    color: #black;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.right-panel {
+    width: 540px;
+    padding: 20px;
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* 區塊之間的間距 */
+}
+
+.right-panel h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* 學歷區塊樣式 */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* 每個條目之間的間距 */
+}
+
+.entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.year {
+    font-weight: bold;
+    color: #555;
+}
+
+.description {
+    color: #777;
+}
+
+/* 作業清單樣式 */
+.homework-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* 條目之間的間距 */
+}
+
+.homework-list li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.homework-list li a:hover {
+    text-decoration: underline;
+}
+
+/* 最愛音樂樣式 */
+.favorite-music ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 30px; /* 每首音樂之間的間隔 */
+}
+
+.favorite-music li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Icon 與文字垂直居中 */
+    gap: 10px; /* Icon 和文字的間距 */
+    text-align: center;
+}
+
+.favorite-music img {
+    width: 40px; /* Icon 大小 */
+    height: 40px;
+    border-radius: 50%;
+}
+
+.favorite-music span {
+    font-size: 1rem;
+    color: #555;
+}
+
+.music-description {
+    margin-top: 20px; /* 與列表的間距 */
+    font-size: 0.9rem;
+    color: #888; /* 柔和的灰色文字 */
+    text-align: center; /* 文字居中 */
+    line-height: 1.4;
+}
